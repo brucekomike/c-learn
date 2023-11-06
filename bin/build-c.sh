@@ -12,7 +12,7 @@ find $SRC_DIR -type f -name '*.c' -exec bash -c 'file_refname="{}";
         file_dest_name=$"$DEST_DIR""${file_refname#$SRC_DIR}";
         mkdir -p $"${file_dest_name%/*}";
 	echo $file_refname ">" ${file_dest_name%.*};
-        g++ "$file_refname" -o ${file_dest_name%.*};
+        gcc "$file_refname" -o ${file_dest_name%.*};
 ' \;
 
 
