@@ -7,7 +7,7 @@ void swap_value (int a, int b){
     int temp = a;
     a = b;
     b=temp;
-    printf("a=%d,b=%d",a,b);
+    printf("a=%d,b=%d\n",a,b);
 }
 
 /*this part is the test of passing address*/
@@ -15,7 +15,7 @@ void swap_address(int* a,int* b){
     int temp = *a;
     *a = *b;
     *b = temp;
-    printf("a=%d,b=%d",*a,*b);
+    printf("a=%d,b=%d\n",*a,*b);
 }
 
 /*this part is the test of pssing a reference*/
@@ -23,7 +23,7 @@ void swap_ref(int&a,int&b){
     int temp = a;
     a = b;
     b=temp;
-    printf("a=%d,b=%d",a,b);
+    printf("a=%d,b=%d\n",a,b);
 }
 
 /*main*/
@@ -50,10 +50,11 @@ int main(int argc, char** argv) {
       std::cout << options.help() << std::endl;
       exit(0);
     }
+    printf("before a=%d,b=%d\n",a,b);
     switch (test_number)
     {
     case 1:
-            swap_value(a,b);
+        swap_value(a,b);
         break;
     case 2:
         swap_address(&a,&b);
@@ -63,6 +64,6 @@ int main(int argc, char** argv) {
     default:
         break;
     }
-
+    printf("after a=%d,b=%d\n",a,b);
     return 0;
 }
