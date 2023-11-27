@@ -17,3 +17,10 @@ Some C programs written for university lessons
     1. 5-1 日期类的调用
     2. 5-3 日期类的调用（Constructor & Destructor）
     3. 5-5 Copy Initializtion
+3. 第三次上机
+
+
+4. 第四次上机
+
+
+5. 第五次上机

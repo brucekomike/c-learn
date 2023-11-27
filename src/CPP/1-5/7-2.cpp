@@ -17,6 +17,7 @@ class B:A{
             cout<<"h\n";
         }
         using A::f;
+        // the line below is not included in the example code
         using A::g;
 };
 
