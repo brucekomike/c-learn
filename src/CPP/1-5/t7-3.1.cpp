@@ -27,7 +27,7 @@ class B: private A{
         int x,y;
 };
 
-void main(){
+int main(){
     A e(1,2);
     e.Show();
     B d(3,4,5,6);

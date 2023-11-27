@@ -1,6 +1,6 @@
-//#include<iostream>
-# include <iostream.h>
-//using namespace std;
+#include<iostream>
+//# include <iostream.h>
+using namespace std;
 class A{
     public:
         void f(int i){
@@ -16,10 +16,11 @@ class B:A{
         void h(){
             cout<<"h\n";
         }
-        A::f;
+        using A::f;
+        using A::g;
 };
 
-void main(){
+int main(){
     B d1;
     d1.f(6);
     d1.g();
